@@ -5,18 +5,18 @@ const port= 8000;
 const db = require('./config/mongoose')
 const message= require('./model/message')
 const app = express();
-const DB ='mongodb+srv://sanskar:1234Test@cluster0.jqhknkx.mongodb.net/TestDB?retryWrites=true&w=majority'
+// const DB ='mongodb+srv://sanskar:1234Test@cluster0.jqhknkx.mongodb.net/TestDB?retryWrites=true&w=majority'
 
-mongoose.connect(DB,{
-    useNewUrlParser:true,
-    useUnifiedTopology:true,
-    useCreateIndex:true,
-    useFindAndModify:false,
+// mongoose.connect(DB,{
+//     useNewUrlParser:true,
+//     useUnifiedTopology:true,
+//     useCreateIndex:true,
+//     useFindAndModify:false,
     
 
-}).then(()=>{
-    console.log('Communication Successful');
-}).catch((err)=>console.log('Error here',err));
+// }).then(()=>{
+//     console.log('Communication Successful');
+// }).catch((err)=>console.log('Error here',err));
 
 app.set('view engine','ejs');
 app.set('views','views');
