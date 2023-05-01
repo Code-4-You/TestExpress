@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const db = main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/testDb');
+  await mongoose.connect('mongodb://0.0.0.0:27017/testDb');
   console.log("Successfully connected to MongoDB");
   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
 }
